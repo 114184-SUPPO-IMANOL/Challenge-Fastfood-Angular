@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1><strong>Componente Point of Sell - POS</strong></h1>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" (input)="onNombre($event)">
+        <label for="pedido">Pedido:</label>
+        <input type="text" name="pedido" id="pedido" (input)="onPedido($event)">
+        <button (click)="enviarPedido()">Ordenar</button>
+    </div>
+</body>
+</html>
